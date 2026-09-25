@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3000/api/clientes';
+const API_URL = 'https://tigo-clientes-backend.onrender.com/api/clientes';
 
 // Función para obtener y mostrar los clientes en la tabla
 async function obtenerClientes() {
