@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIGO - Gestión de Clientes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Plataforma TIGO - Módulo de Clientes</h1>
+
+        <!-- Formulario para crear clientes -->
+        <div class="form-card">
+            <h3>Registrar Nuevo Cliente</h3>
+            <form id="clienteForm">
+                <input type="text" id="nombre" placeholder="Nombre completo" required>
+                <input type="text" id="cedula" placeholder="Cédula" required>
+                <input type="email" id="correo" placeholder="Correo electrónico" required>
+                <input type="text" id="telefono" placeholder="Teléfono" required>
+                <button type="submit">Guardar Cliente</button>
+            </form>
+        </div>
+
+        <!-- Tabla para listar clientes -->
+        <div class="table-card">
+            <h3>Lista de Clientes</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Cédula</th>
+                        <th>Correo</th>
+                        <th>Teléfono</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaClientes">
+                    <!-- Los clientes aparecerán aquí mágicamente con JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
